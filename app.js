@@ -4,7 +4,7 @@ let productos = [
     marca: "nike",
     color: "blanco",
     talle: 42,
-    precio: 100,
+    precio: 100
   },
   {
     marca: "adidas",
@@ -38,13 +38,30 @@ for (let index = 0; index < productos.length; index++) {
   let item = document.createElement("li");
   let parrafo = document.createElement("p");
   let boton = document.createElement("button");
+  boton.setAttribute("key", index);
   parrafo.textContent = element.marca;
   boton.textContent = "Agregar";
   item.appendChild(parrafo);
   item.appendChild(boton);
   lista.appendChild(item);
+  boton.addEventListener("click", (e) => {
+    let indice = e.target.getAttribute("key");
+    let indiceP = parseInt(indice);    
+    carrito.push(productos[indiceP]);
+    let productosCarrito = document.createElement("li");
+    listaCarro.appendChild(productosCarrito);
+    .textContent = ` ${element.nombre} Marca: ${element.marca}  
+
+    })
 }
 
 
-button.setAttribute("id", "idPrueba");
-let boton = document.getElementById()
+
+
+
+
+
+const carrito = [];
+
+
+

@@ -20,8 +20,16 @@ body {
 
 h1 {
   font-size: 4rem;
-  -align: center;
+  text-align: center;
   margin: 5rem;
+}
+section p {  
+  text-align: center;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+li p {
+  
 }
 form {
   background: white;
@@ -54,7 +62,7 @@ form p {
   border-top: 3px solid blue;
 }
 .box2 {
-  border-top: 3px solid green;
+  border-top: 3px solid blue;
 }
 .box3 {
   border-left: 3px solid orange;
@@ -75,7 +83,18 @@ form p {
   display: flex;
   margin: 5rem;
 }
-.button {    
+.button1, .button2 {    
     margin: 1rem 1rem 0 0;
     padding: 0.3rem;
+    border: 1px solid black ;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.button1 {
+  background: #0D870D; 
+  
+}
+.button2 {
+  background: #AB0900;
 }
